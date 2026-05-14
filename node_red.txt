@@ -1,0 +1,54 @@
+[
+    {
+        "id": "1c886d443037c633",
+        "type": "mqtt in",
+        "z": "42113ff58ebf75cf",
+        "name": "[MQTT] Subscribe STATUS",
+        "topic": "name/adv/obs",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e81cfeb978605dbb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 820,
+        "y": 1280,
+        "wires": [
+            [
+                "7dde338dfbefbff6"
+            ]
+        ]
+    },
+    {
+        "id": "e81cfeb978605dbb",
+        "type": "mqtt-broker",
+        "name": "EMQX",
+        "broker": "broker.emqx.io",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
